@@ -1,0 +1,459 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background: url("images/cafe-setting.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+body::before{
+    content: "";
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.55);
+
+    z-index: -1;
+}
+
+
+.navbar{
+    background: rgba(0,0,0,0.65);
+
+    backdrop-filter: blur(10px);
+
+    padding: 15px 40px;
+
+    transition: 0.3s ease;
+}
+.navbar-brand{
+    color: white !important;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.nav-link{
+    color: white !important;
+
+    margin: 0 15px;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #f8c471 !important;
+}
+
+
+.search-bar{
+    border-radius: 8px;
+
+    border: none;
+
+    padding: 6px 12px;
+}
+
+.search-bar{
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 8px;
+}
+
+
+.home-layout{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 40px;
+   padding: 140px 80px 80px;
+}
+
+.home-text{
+    flex: 1;
+}
+
+.home-slider{
+    flex: 1;
+}
+
+.welcome-title{
+    font-size: 5rem;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    color: white;
+
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.8);
+}
+
+.welcome-sub{
+    font-size: 1.4rem;
+
+    color: #f1f1f1;
+
+    margin-top: 15px;
+}
+.home-slider img{
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+}
+
+.promo-wrapper{
+    text-align: center;
+
+    padding: 80px 40px;
+}
+
+.promo-section{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.promo-card{
+    width: 320px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(8px);
+
+    border-radius: 25px;
+
+    padding: 20px;
+
+    transition: 0.4s ease;
+}
+
+.promo-card:hover{
+    transform: translateY(-10px);
+}
+
+.promo-card img{
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+.promo-card h3,
+.promo-card p{
+    color: white;
+}
+.promo-heading h1,
+.promo-heading p,
+.promo-card h3,
+.promo-card p {
+    color: white !important;
+}
+
+.menu-section{
+    padding: 70px 40px;
+
+    text-align: center;
+}
+
+
+.menu-grid{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+.menu-card h3,
+.menu-card p {
+    color: white !important;
+}
+.menu-card{
+    background: rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(5px);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.menu-card:hover{
+    transform: translateY(-5px);
+}
+
+
+.menu-card img{
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.menu-title,
+.container h1 {
+    color: white !important;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+}
+.menu-card h2{
+    color: white;
+
+    font-size: 38px;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+.menu-description{
+    color: white;
+
+    font-size: 18px;
+}
+
+.price{
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+.order-btn,
+.reserve-btn,
+.menu-card button,
+.contact-form button {
+    background: transparent;
+    border: 2px solid #f8c471;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+}
+
+.order-btn:hover,
+.reserve-btn:hover,
+.menu-card button:hover,
+.contact-form button:hover {
+    background: #f8c471;
+    color: black;
+    transform: scale(1.05);
+}
+.message-box {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: rgba(0,0,0,0.8);
+    color: white;
+
+    padding: 15px 25px;
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    z-index: 9999;
+}   
+
+.about-section{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 80px 60px;
+}
+
+
+.story-box{
+    width: 45%;
+}
+
+.story-box h1{
+    font-size: 60px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+.story-box p{
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: white;
+}
+
+
+.carousel-box{
+    width: 50%;
+}
+
+.carousel-box img{
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+
+.contact-container{
+    max-width: 700px;
+
+    margin: auto;
+
+    padding-top: 80px;
+
+}
+
+.contact-form{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    font-size: 16px;
+}
+
+.contact-form textarea{
+    height: 150px;
+}
+
+.contact-form button{
+    background: #f8c471;
+
+    color: black;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+.contact-form button:hover{
+    background: white;
+}
+
+
+footer{
+    background: rgba(0,0,0,0.9);
+
+    margin-top: 60px;
+
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+
+.footer-content div{
+    margin: 10px;
+}
+
+.rights{
+    text-align: center;
+
+    padding: 15px;
+
+    border-top: 1px solid gray;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width: 992px){
+
+    .home-layout,
+    .about-section{
+        flex-direction: column;
+    }
+
+    .story-box,
+    .carousel-box,
+    .home-text,
+    .home-slider{
+        width: 100%;
+    }
+
+    .menu-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .promo-section{
+        flex-direction: column;
+        align-items: center;
+    }
+}
